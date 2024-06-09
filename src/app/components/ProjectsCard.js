@@ -11,6 +11,7 @@ import { PiFramerLogo } from "react-icons/pi";
 import { BsBootstrap } from "react-icons/bs";
 import { SiReactrouter } from "react-icons/si";
 import { AiOutlineApi } from "react-icons/ai";
+import Link from "next/link";
 
 
 const ProjectsCard = ({ project }) => {
@@ -73,26 +74,29 @@ const ProjectsCard = ({ project }) => {
           ))}
         </div>
         <div className="flex space-x-4  ">
-          <a
+          <Link
+          target="_blank"
             href={project.githubLinkClient}
             className="text-primary hover:text-primary"
           >
              <Github />
-          </a>
+          </Link>
           {project.githubLinkServer && (
-            <a
+            <Link
+            target="_blank"
               href={project.githubLinkServer}
               className="text-primary hover:text-primary"
             >
               <Server />
-            </a>
+            </Link>
           )}
-          <a
+          <Link
+          target="_blank"
             href={project.liveLink}
             className="text-primary hover:text-primary"
           >
             <TbWorldWww className="text-primary text-3xl"/>
-          </a>
+          </Link>
         </div>
         </div>
       </div>
