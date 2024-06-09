@@ -1,3 +1,5 @@
+"use client"
+import { Link as ScrollLink } from 'react-scroll';
 
 const Hero = () => {
     return (
@@ -7,12 +9,16 @@ const Hero = () => {
         <p className="max-w-xl mx-auto my-8 ">Junior web developer specialized in Front-End.<br/> With expertise in React JS | Next.js | Tailwind CSS. Building user friendly and responsive web applications.</p>
         </div>
         <div className="space-x-4">
-        <button className="py-2 px-4 border border-primary text-primary rounded hover:bg-primary hover:text-white transition-colors duration-300">
-          Projects
-        </button>
-        <button className="py-2 px-4 bg-primary text-white rounded hover:bg-secondary hover:text-primary transition-colors duration-300">
-          Contact
-        </button>
+        <ScrollLink to="projects" smooth={true} className="inline-block">
+          <button className="py-2 px-4 border border-primary text-primary rounded hover:bg-primary hover:text-white transition-colors duration-300">
+            Projects
+          </button>
+        </ScrollLink>
+        <ScrollLink to="contact" smooth={true} className="inline-block">
+          <button className="py-2 px-4 bg-primary text-white rounded hover:bg-secondary hover:text-primary transition-colors duration-300">
+            Contact
+          </button>
+        </ScrollLink>
       </div>
       </section>
     );
