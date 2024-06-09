@@ -1,5 +1,5 @@
 "use client"
-import { Facebook, Github, Linkedin } from 'lucide-react'
+import { Facebook, Github, Linkedin, Mail } from 'lucide-react'
 import React from 'react'
 import { Link as ScrollLink } from 'react-scroll';
 import { FaHackerrank } from "react-icons/fa";
@@ -34,6 +34,9 @@ const Footer = () => {
         </ScrollLink>
   </nav> 
   <nav className="grid grid-flow-col gap-4 mb-4">
+      <Link href="mailto:email2obaidul@gmail.com" target="_blank" rel="noopener noreferrer">
+        <Mail className="hover:text-primary transition-colors duration-300" title="Email" />
+      </Link>
       <Link href="https://github.com/Brilliant-Developer1" target="_blank" rel="noopener noreferrer">
         <Github className="hover:text-primary transition-colors duration-300" title="GitHub" />
       </Link>
