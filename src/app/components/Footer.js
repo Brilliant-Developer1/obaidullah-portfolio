@@ -2,6 +2,9 @@
 import { Facebook, Github, Linkedin } from 'lucide-react'
 import React from 'react'
 import { Link as ScrollLink } from 'react-scroll';
+import { FaHackerrank } from "react-icons/fa";
+import Link from 'next/link';
+import { SiCodeforces, SiLeetcode } from 'react-icons/si';
 
 const Footer = () => {
   return (
@@ -31,16 +34,22 @@ const Footer = () => {
         </ScrollLink>
   </nav> 
   <nav className="grid grid-flow-col gap-4 mb-4">
-          <a href="https://github.com/Brilliant-Developer1" target="_blank" rel="noopener noreferrer">
-            <Github className="hover:text-primary transition-colors duration-300" />
-          </a>
-          <a href="www.linkedin.com/in/md-obaidullah-brilliant-developer" target="_blank" rel="noopener noreferrer">
-            <Linkedin className="hover:text-primary transition-colors duration-300" />
-          </a>
-          <a href="https://www.facebook.com/abidh18" target="_blank" rel="noopener noreferrer">
-            <Facebook className="hover:text-primary transition-colors duration-300" />
-          </a>
-        </nav>
+      <Link href="https://github.com/Brilliant-Developer1" target="_blank" rel="noopener noreferrer">
+        <Github className="hover:text-primary transition-colors duration-300" title="GitHub" />
+      </Link>
+      <Link href="https://www.linkedin.com/in/md-obaidullah-brilliant-developer" target="_blank" rel="noopener noreferrer">
+        <Linkedin className="hover:text-primary transition-colors duration-300" title="LinkedIn" />
+      </Link>
+      <Link href="https://www.facebook.com/abidh18" target="_blank" rel="noopener noreferrer">
+        <Facebook className="hover:text-primary transition-colors duration-300" title="Facebook" />
+      </Link>
+      <Link href="https://codeforces.com/profile/Md_Obaidullah" target="_blank" rel="noopener noreferrer">
+        <SiCodeforces className="hover:text-primary transition-colors duration-300 text-xl" title="Codeforces" />
+      </Link>
+      <Link href="https://leetcode.com/u/email2obaidul/" target="_blank" rel="noopener noreferrer">
+        <SiLeetcode className="hover:text-primary transition-colors duration-300 text-xl" title="LeetCode" />
+      </Link>
+    </nav>
   <aside>
     <p>Copyright © 2024 - All right reserved by Brilliant Developer</p>
   </aside>

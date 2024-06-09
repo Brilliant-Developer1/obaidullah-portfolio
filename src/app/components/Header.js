@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import { Menu, X } from 'lucide-react';
+import Link from 'next/link';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -31,6 +32,11 @@ const Header = () => {
           <span className="hover:text-primary">Projects</span>
           <span className="absolute left-0 bottom-0 w-full h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
         </ScrollLink>
+        <Link href="https://drive.google.com/file/d/1rJvhqtdq0iBdYjYeAvUF0PxrW9gLjNmi/view?usp=sharing" target="_blank" className="relative group cursor-pointer">
+          <span className="hover:text-primary">Resume</span>
+          
+          <span className="absolute left-0 bottom-0 w-full h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+        </Link>
         <ScrollLink to="contact" smooth={true} className="relative group cursor-pointer">
           <span className="py-2 px-4 bg-primary text-white rounded hover:bg-secondary hover:text-primary transition-colors duration-300">Contact</span>
           
