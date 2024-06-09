@@ -38,7 +38,7 @@ export const projects = [
       imageUrl2:"https://i.ibb.co/FnBJxdT/SCR-20240609-ogfp.png"
     },
     {
-      title: "Blog Platform",
+      title: "User List Application",
       description: "This is a simple user list dashboard application built using React with vite, Tailwind CSS. Used dummyjson API for users data. It allows to view a list of users by different types of filters and navigate through different routes.",
       techStack: ["Vite", "Tailwind CSS", "React JS", "API"],
       githubLinkClient: "https://github.com/Brilliant-Developer1/user_list_application",
