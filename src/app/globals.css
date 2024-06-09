@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --myprimary: #133955;
+  --mysecondary: #dbdbdb;
+}
+
+body {
+  @apply font-sans;
+}
