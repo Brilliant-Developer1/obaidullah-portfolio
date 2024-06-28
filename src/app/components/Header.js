@@ -44,7 +44,7 @@ const Header = () => {
         {menuOpen ? <X /> : <Menu />}
       </button>
       {menuOpen && (
-        <nav className="md:hidden absolute top-16 left-0 w-full bg-white shadow-lg">
+        <nav className="md:hidden absolute top-14 left-0 w-full bg-white shadow-lg ">
           <div className="flex flex-col items-center space-y-4 py-4 px-8">
             <ScrollLink to="home" smooth={true} className="relative group cursor-pointer" onClick={() => setMenuOpen(false)}>
               <span className="hover:text-primary">Home</span>

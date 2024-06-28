@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <section className="bg-gray-100">
         <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
-  <nav className="grid grid-flow-col gap-4 uppercase">
+  <nav className="flex flex-wrap justify-center gap-4 uppercase">
     
     <ScrollLink to="home" smooth={true} className="relative group cursor-pointer">
           <span className="hover:text-primary">About</span>
@@ -33,7 +33,7 @@ const Footer = () => {
           <span className="absolute left-0 bottom-0 w-full h-0.5 bg-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
         </ScrollLink>
   </nav> 
-  <nav className="grid grid-flow-col gap-4 mb-4">
+  <nav className="flex flex-wrap justify-center gap-4 mb-4">
       <Link href="mailto:email2obaidul@gmail.com" target="_blank" rel="noopener noreferrer">
         <Mail className="hover:text-primary transition-colors duration-300" title="Email" />
       </Link>
