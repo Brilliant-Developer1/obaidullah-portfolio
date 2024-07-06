@@ -16,9 +16,9 @@ I'm a passionate junior web developer specialized in Front-End. With expertise i
  - Bootstrap, Material UI
  - React Router DOM, Firebase, JWT, Axios
 3. Familiar:
-   - Typescript
-   - Redux
-   - Data Structure
+ - Typescript
+ - Redux
+ - Data Structure
 4. Programming Languages: 
  - JavaScript
  - Python
